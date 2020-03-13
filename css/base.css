@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+
+    /*防止元素设置了 padding 等属性改变盒子大小影响到其他元素的布局*/
+    box-sizing: border-box;
+
+    /*清除移动端点击产生的高亮效果*/
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+ol,ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+textarea, input{
+    outline: none;
+    border: none;
+
+    /*清除拟物化*/
+    -webkit-appearance : none;
+}
+
+/*清除浮动*/
+
+.clearfix:before {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height : 0;
+    line-height: 0;
+}
